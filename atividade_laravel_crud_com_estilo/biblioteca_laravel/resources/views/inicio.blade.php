@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ URL::asset('css/cadastro.css'); }} ">
 </head>
 <body>
-
 <div class="caixa0">
     <div class="caixa1">
         <h1>Produtos </h1>
@@ -22,7 +21,6 @@
                 <button class="close-btn" onclick="this.parentElement.style.display='none';">×</button>
             </div>
         @endif
-    
         <form action="/cadastrar-produto" method="POST">
             @csrf
             <label for="lblNome">Nome:</label>
